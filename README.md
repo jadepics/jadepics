@@ -1,16 +1,19 @@
-## Hi there 👋
+# Ciao, sono Giada!
 
-<!--
-**jadepics/jadepics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Sono una studentessa di **Ingegneria Informatica** presso l'**Università degli Studi di Roma Tor Vergata**.
 
-Here are some ideas to get you started:
+- 🚀 Qui trovi i repository che raccolgono il mio percorso, i miei progetti e le tecnologie che utilizzo
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Linguaggi più usati
+
+<!-- LANGUAGES_START -->
+_Aggiornamento automatico in corso..._
+<!-- LANGUAGES_END -->
+
+## GitHub Stats
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TUO_USERNAME&layout=compact)
+
+## Contatti
+
+- LinkedIn: www.linkedin.com/in/giada-pica-0a6bb7197
