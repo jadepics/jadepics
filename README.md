@@ -9,12 +9,13 @@ Sono una studentessa di **Ingegneria Informatica** presso l'**Università degli 
 <!-- LANGUAGES_START -->
 
 <!-- LANGUAGES_END -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TUO_USERNAME&layout=compact&cache_seconds=21600)
 
 ## GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TUO_USERNAME&show_icons=true&cache_seconds=21600)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TUO_USERNAME&layout=compact&cache_seconds=21600)
+
 
 ## Contatti
 
