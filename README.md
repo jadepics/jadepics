@@ -7,7 +7,7 @@ Sono una studentessa di **Ingegneria Informatica** presso l'**Università degli 
 ## Linguaggi più usati
 
 <!-- LANGUAGES_START -->
-_Aggiornamento automatico in corso..._
+
 <!-- LANGUAGES_END -->
 
 ## GitHub Stats
