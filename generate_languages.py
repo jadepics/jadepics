@@ -1,7 +1,7 @@
 import os
 import requests
 
-USERNAME = os.getenv("GITHUB_USERNAME")
+USERNAME = os.getenv("jadepics")
 TOKEN = os.getenv("GITHUB_TOKEN")
 README_FILE = "README.md"
 
@@ -15,7 +15,7 @@ def get_repos(username):
     page = 1
 
     while True:
-        url = f"https://api.github.com/users/{username}/repos?per_page=100&page={page}"
+        url = f"https://api.github.com/users/{jadepics}/repos?per_page=100&page={page}"
         response = requests.get(url, headers=headers, timeout=20)
         response.raise_for_status()
         data = response.json()
