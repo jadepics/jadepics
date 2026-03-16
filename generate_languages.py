@@ -84,7 +84,7 @@ def main():
     languages = aggregate_languages(USERNAME)
     markdown = build_markdown(languages)
     update_readme(markdown)
-    print("README aggiornato correttamente.")
-
+    print(f"README aggiornato correttamente per {USERNAME}.")
+    
 if __name__ == "__main__":
     main()
