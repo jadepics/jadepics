@@ -1,7 +1,10 @@
 import os
 import requests
 
-USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER") or os.getenv("GITHUB_REPOSITORY", "jadepics/jadepics").split("/")[0]
+USERNAME = (
+    os.getenv("GITHUB_REPOSITORY_OWNER")
+    or os.getenv("GITHUB_REPOSITORY", "jadepics/jadepics").split("/")[0]
+)
 TOKEN = os.getenv("GITHUB_TOKEN")
 README_FILE = "README.md"
 
@@ -9,12 +12,13 @@ headers = {"Accept": "application/vnd.github+json"}
 if TOKEN:
     headers["Authorization"] = f"Bearer {TOKEN}"
 
+
 def get_repos(username):
     repos = []
     page = 1
 
     while True:
-        url = f"https://api.github.com/users/{jadepics}/repos?per_page=100&page={page}"
+        url = f"https://api.github.com/users/{username}/repos?per_page=100&page={page}"
         response = requests.get(url, headers=headers, timeout=20)
         response.raise_for_status()
         data = response.json()
@@ -27,17 +31,18 @@ def get_repos(username):
 
     return repos
 
+
 def get_languages(languages_url):
     response = requests.get(languages_url, headers=headers, timeout=20)
     response.raise_for_status()
     return response.json()
+
 
 def aggregate_languages(username):
     repos = get_repos(username)
     totals = {}
 
     for repo in repos:
-        # Salta fork e repo archiviati, se vuoi un profilo più pulito
         if repo.get("fork") or repo.get("archived"):
             continue
 
@@ -46,6 +51,7 @@ def aggregate_languages(username):
             totals[lang] = totals.get(lang, 0) + value
 
     return totals
+
 
 def build_markdown(languages):
     if not languages:
@@ -60,6 +66,7 @@ def build_markdown(languages):
         lines.append(f"- **{lang}**: {percentage:.1f}%")
 
     return "\n".join(lines)
+
 
 def update_readme(content):
     with open(README_FILE, "r", encoding="utf-8") as f:
@@ -80,11 +87,13 @@ def update_readme(content):
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(updated)
 
+
 def main():
     languages = aggregate_languages(USERNAME)
     markdown = build_markdown(languages)
     update_readme(markdown)
     print(f"README aggiornato correttamente per {USERNAME}.")
-    
+
+
 if __name__ == "__main__":
     main()
