@@ -1,14 +1,16 @@
 import os
 import requests
+import os
+import requests
 
-USERNAME = os.getenv("jadepics")
+USERNAME = os.getenv("GITHUB_USERNAME", "jadepics")
 TOKEN = os.getenv("GITHUB_TOKEN")
 README_FILE = "README.md"
 
-headers = {}
+headers = {"Accept": "application/vnd.github+json"}
 if TOKEN:
     headers["Authorization"] = f"Bearer {TOKEN}"
-    headers["Accept"] = "application/vnd.github+json"
+
 
 def get_repos(username):
     repos = []
@@ -82,9 +84,6 @@ def update_readme(content):
         f.write(updated)
 
 def main():
-    if not USERNAME:
-        raise ValueError("Variabile GITHUB_USERNAME non impostata")
-
     languages = aggregate_languages(USERNAME)
     markdown = build_markdown(languages)
     update_readme(markdown)
