@@ -7,7 +7,10 @@ Sono una studentessa di **Ingegneria Informatica** presso l'**Università degli 
 ## Linguaggi più usati
 
 <!-- LANGUAGES_START -->
-
+- **Python**: 69.2%
+- **Java**: 22.5%
+- **Go**: 8.2%
+- **Dockerfile**: 0.1%
 <!-- LANGUAGES_END -->
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jadepics&layout=compact)
 
