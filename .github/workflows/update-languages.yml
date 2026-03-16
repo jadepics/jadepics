@@ -12,9 +12,6 @@ permissions:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_USERNAME: jadepics
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout
@@ -28,11 +25,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Debug env
+      - name: Debug runner values
         run: |
-          echo "GITHUB_USERNAME=$GITHUB_USERNAME"
+          echo "OWNER=$GITHUB_REPOSITORY_OWNER"
+          echo "REPO=$GITHUB_REPOSITORY"
+          echo "----- generate_languages.py -----"
+          sed -n '1,120p' generate_languages.py
 
       - name: Run script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python generate_languages.py
 
       - name: Commit changes
