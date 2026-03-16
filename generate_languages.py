@@ -1,16 +1,13 @@
 import os
 import requests
-import os
-import requests
 
-USERNAME = os.getenv("GITHUB_USERNAME", "jadepics")
+USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER") or os.getenv("GITHUB_REPOSITORY", "jadepics/jadepics").split("/")[0]
 TOKEN = os.getenv("GITHUB_TOKEN")
 README_FILE = "README.md"
 
 headers = {"Accept": "application/vnd.github+json"}
 if TOKEN:
     headers["Authorization"] = f"Bearer {TOKEN}"
-
 
 def get_repos(username):
     repos = []
