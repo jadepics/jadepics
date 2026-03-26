@@ -1,8 +1,8 @@
 # Ciao, sono Giada!
 
-Sono una studentessa di **Ingegneria Informatica** presso l'**Università degli Studi di Roma Tor Vergata**.
+Sono una studentessa magistrale di **Ingegneria Informatica** presso l'**Università degli Studi di Roma Tor Vergata**.
 
-- 🚀 Qui trovi i repository che raccolgono il mio percorso, i miei progetti e le tecnologie che utilizzo
+🚀 Qui trovi i repository che raccolgono il mio percorso, i miei progetti e le tecnologie che utilizzo!
 
 ## Linguaggi più usati
 
