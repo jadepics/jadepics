@@ -14,11 +14,11 @@ Sono una studentessa magistrale di **Ingegneria Informatica** presso l'**Univers
 - **HTML**: 0.3%
 - **Dockerfile**: 0.0%
 <!-- LANGUAGES_END -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jadepics&layout=compact)
+![Top Languages](https://raw.githubusercontent.com/jadepics/jadepics/main/profile/top-langs.svg)
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jadepics&show_icons=true)
+![GitHub Stats](https://raw.githubusercontent.com/jadepics/jadepics/main/profile/stats.svg)
 
 
 
